@@ -1,3 +1,4 @@
+// A button specifically made for this game 
 export class GameButton {
     constructor(value, colour, onClick) {
         this.value = value
@@ -6,19 +7,33 @@ export class GameButton {
         this.btn = document.createElement("button")
         this.btn.classList.add("game-button")
         this.btn.style.backgroundColor = colour
-        this.btn.onclick = () => {onClick(this)};
+        this.btn.onclick = () => { onClick(this) };
 
-        this.reveal()
+        this.disable(true)
+        this.displayValue(true)
     }
 
 
-    hide() {
-        this.btn.disabled = false
-        this.btn.innerText = ""
+    displayValue(value) {
+        if (value === true) {
+            this.btn.innerText = this.value
+        }
+        else {
+            this.btn.innerText = ""
+        }
     }
 
-    reveal() {
-        this.btn.disabled = true
-        this.btn.innerText = this.value
+    disable(value) {
+        this.btn.disabled = value
+    }
+
+    setPos(x, y) {
+
+        console.log(x)
+        console.log(y)
+
+        this.btn.style.position = "absolute"
+        this.btn.style.left = x + "px"
+        this.btn.style.top = y + "px"
     }
 }
