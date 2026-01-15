@@ -28,6 +28,7 @@ export class GameController {
 
 
     start(numButtons, onEnd) {
+        this.colours.sort(() => Math.random())
         this.reset()
         this.onEnd = onEnd
 
