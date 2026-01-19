@@ -14,7 +14,7 @@ export class ScreenController {
         document.body.insertAdjacentElement("beforeend", this.footer)
 
 
-        this.getStyles("../css/ScreenController.css")
+        this.getStyles("./css/ScreenController.css")
         this.setBrowserTitle(browserTitle)
         this.setPageTitle(pageTitle)
     }

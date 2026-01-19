@@ -7,11 +7,11 @@ import { TextBox } from "./TextBox.js"
 export class WritterControler extends ScreenController {
     constructor() {
         super(STRINGS.BROWSER_TITLE, STRINGS.WRITER_TITLE)
-        this.getStyles("../css/TextBox.css")
-        this.getStyles("../css/Writer.css")
+        this.getStyles("./css/TextBox.css")
+        this.getStyles("./css/Writer.css")
         this.LSController = new LocalStorageController()
         this.footer.insertAdjacentElement("beforeend",
-            this.createRedirect(STRINGS.BACK, "../index.html"))
+            this.createRedirect(STRINGS.BACK, "./index.html"))
 
         this.timeStamp = document.createElement("h4")
         this.timeStamp.id = "time-stamp"

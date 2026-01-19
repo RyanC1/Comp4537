@@ -8,9 +8,9 @@ export class IndexController extends ScreenController {
         name.innerHTML = STRINGS.AUTHOR
         this.header.insertAdjacentElement("beforeend", name)
         this.body.insertAdjacentElement("beforeend",
-            this.createRedirect(STRINGS.READER_TITLE, "../reader.html"))
+            this.createRedirect(STRINGS.READER_TITLE, "./reader.html"))
         this.body.insertAdjacentElement("beforeend",
-            this.createRedirect(STRINGS.WRITER_TITLE, "../writer.html"))
+            this.createRedirect(STRINGS.WRITER_TITLE, "./writer.html"))
     }
 
 
