@@ -1,0 +1,32 @@
+* {
+    margin: 0;
+}
+
+body {
+    display: grid;
+    height: 100vh;
+    grid-template-rows: 100px 1fr 100px;
+}
+
+
+#header-content {
+    border-bottom: 1px solid black;
+    padding: 5px;
+}
+
+#footer-content {
+    border-top: 1px solid black;
+    padding: 5px;
+}
+
+#main-content {
+    overflow-y: auto;
+    display: flex;
+    flex-direction: column;
+    overflow-x: clip;
+}
+
+#main-content>* {
+    padding: 5px;
+}
+

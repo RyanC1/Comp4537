@@ -28,7 +28,7 @@ export class GameController {
 
 
     start(numButtons, onEnd) {
-        this.colours.sort(() => Math.random())
+        this.colours.sort(() => 0.5 - Math.random())
         this.reset()
         this.onEnd = onEnd
 

@@ -1,0 +1,16 @@
+#top-bar {
+    position: sticky;
+    top: 0;
+    background-color: #EEE;
+}
+
+#add-button {
+    margin: 5px;
+    background-color: greenyellow;
+}
+
+#time-stamp {
+    position: absolute;
+    right: 10px;
+    top: 10px;
+}

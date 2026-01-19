@@ -1,0 +1,23 @@
+.text-box {
+    display: flex;
+    align-items:center;
+    width: 100%;
+    background-color: aliceblue;
+    min-height: 100px;
+    margin: 10px 0px;
+    
+    /* border: 1px solid black; */
+}
+
+.text-box textarea {
+    resize: none;
+    outline: none;
+    width: 80%;
+    height: 100%;
+}
+
+.text-box button {
+    width: 150px;
+    height: 100%;
+    background-color: lightpink;
+}
