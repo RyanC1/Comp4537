@@ -3,8 +3,8 @@ import { ScreenController } from "./ScreenController.js"
 import { LocalStorageController } from "./LocalStorageController.js"
 import { TextBox } from "./TextBox.js"
 
-// Controls writter screen functions
-export class WritterControler extends ScreenController {
+// Controls reader screen functions
+export class ReaderControler extends ScreenController {
     constructor() {
         super(STRINGS.BROWSER_TITLE, STRINGS.READER_TITLE)
         this.getStyles("./css/TextBox.css")
@@ -39,7 +39,7 @@ export class WritterControler extends ScreenController {
 
         document.querySelectorAll(".text-box").forEach(b => {b.remove()})
 
-        storedText.forEach((note, i) => {
+        storedText.forEach((note) => {
             this.addNewBox(note)
         });
 
@@ -48,4 +48,4 @@ export class WritterControler extends ScreenController {
 
 }
 
-new WritterControler()
+new ReaderControler()
